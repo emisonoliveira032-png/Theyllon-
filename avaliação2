@@ -1,0 +1,25 @@
+java
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+        public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+
+                            // Recebendo a temperatura em Celsius
+                                    System.out.print("Digite a temperatura em Celsius: ");
+                                            double temperaturaCelsius = scanner.nextDouble();
+
+                                                    // Realizando as conversões
+                                                            double temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32;
+                                                                    double temperaturaKelvin = temperaturaCelsius + 273.15;
+
+                                                                            // Exibindo os resultados
+                                                                                    System.out.printf("Temperatura em Celsius: %.1f °C%n", temperaturaCelsius);
+                                                                                            System.out.printf("Temperatura em Fahrenheit: %.1f °F%n", temperaturaFahrenheit);
+                                                                                                    System.out.printf("Temperatura em Kelvin: %.2f K%n", temperaturaKelvin);
+
+                                                                                                            scanner.close();
+        }
+}
+        }
+}
